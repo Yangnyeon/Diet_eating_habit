@@ -1,9 +1,14 @@
 package com.example.dieteatinghabits
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
+import androidx.cardview.widget.CardView
 import androidx.core.util.rangeTo
+import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_bmi.*
 
 class BMI : AppCompatActivity() {
@@ -54,7 +59,19 @@ class BMI : AppCompatActivity() {
                     bmiresult.text = "당신은 고도비만입니다."
                 }
             }
+            bmirange.visibility = View.VISIBLE
+        }
 
+        bmirange.setOnClickListener {
+            val builder1 = AlertDialog.Builder(this)
+            builder1.setTitle("  BMI 등급표 정리 ")
+                .setMessage("0 ~ 18.5 : 저체중 , 18.5 ~ 25 : 정상 , 25 ~ 30 : 과체중 , 30 ~ 35 : 경도비만, 35 ~ 40 : 중등도 비만, 40 ~ : 고도비만")
+
+                .setPositiveButton("확인",
+                    DialogInterface.OnClickListener { dialog, id ->
+                    })
+            // 다이얼로그를 띄워주기
+            builder1.show()
         }
 
     }

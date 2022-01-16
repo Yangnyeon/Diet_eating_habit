@@ -27,6 +27,8 @@ class CustomAdapter(context: Context, image: ArrayList<Int>, arrayList: ArrayLis
         var myview = convertView
         val holder: ViewHolder
 
+        
+
         if (convertView == null) {
 
             val mInflater = (context as Activity).layoutInflater

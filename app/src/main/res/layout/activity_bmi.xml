@@ -40,14 +40,14 @@
         android:layout_height="wrap_content"
         android:hint="키를 입력하세열"
         android:textSize="30sp"
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="30sp"
         android:layout_gravity="center"
         android:paddingLeft="50sp"
         android:id="@+id/wheel"
         ></EditText>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="300sp"
+        android:layout_width="250sp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="450dp"
         android:layout_gravity="center"
@@ -60,9 +60,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="계산!"
-            android:textSize="50sp"
-            android:gravity="center"
+            android:textSize="30sp"
             android:id="@+id/cal"
+            android:gravity="center"
             ></TextView>
 
 
@@ -90,6 +90,31 @@
         android:gravity="center"
         android:layout_marginTop="20sp"
         ></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="450dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/white"
+        android:id="@+id/bmirange"
+        android:visibility="invisible"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI 범위 보러가기"
+            android:textSize="20sp"
+            android:gravity="center"
+            ></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
 
 
 
