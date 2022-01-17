@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dieteatinghabits">
         <activity
+            android:name=".kcal"
+            android:exported="true" />
+        <activity
             android:name=".BMI"
             android:exported="true" />
         <activity

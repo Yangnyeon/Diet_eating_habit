@@ -42,11 +42,17 @@ class MainFragment3 : Fragment() {
 
 
         var realresult = view.findViewById<CardView>(R.id.realresult)
+        var realresult2 = view.findViewById<CardView>(R.id.realresult2)
 
 
         realresult.setOnClickListener {
             var intent = Intent(requireActivity(), BMI::class.java)
             startActivity(intent)
+        }
+
+        realresult2.setOnClickListener {
+            var intent2 = Intent(requireActivity(), kcal::class.java)
+            startActivity(intent2)
         }
 
 
