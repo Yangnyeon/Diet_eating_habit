@@ -10,6 +10,8 @@ import androidx.cardview.widget.CardView
 import androidx.core.util.rangeTo
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_bmi.*
+import kotlinx.android.synthetic.main.activity_bmi.cal
+import kotlinx.android.synthetic.main.activity_kcal.*
 
 class BMI : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

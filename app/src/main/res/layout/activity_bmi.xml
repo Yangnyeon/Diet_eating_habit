@@ -71,14 +71,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="결과 : "
         android:id="@+id/result"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:gravity="center"
-        android:layout_marginTop="60sp"
+        android:layout_marginTop="20sp"
         ></TextView>
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -105,11 +106,10 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BMI 범위 보러가기"
-            android:textSize="20sp"
+            android:layout_height="match_parent"
             android:gravity="center"
-            ></TextView>
+            android:text="BMI 범위 보러가기"
+            android:textSize="20sp"></TextView>
 
 
     </androidx.cardview.widget.CardView>
