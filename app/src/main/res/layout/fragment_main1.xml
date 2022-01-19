@@ -47,6 +47,26 @@
 
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="380sp"
+                android:layout_height="400sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30sp"
+                android:elevation="10dp"
+                app:cardCornerRadius="75dp"
+                android:id="@+id/weight_history">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400sp"
+                    android:src="@drawable/weight"
+                    android:scaleType="fitXY"
+                    ></ImageView>
+
+
+
+            </androidx.cardview.widget.CardView>
+
 
         </LinearLayout>
 

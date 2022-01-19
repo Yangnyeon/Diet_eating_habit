@@ -1,6 +1,7 @@
 package com.example.dieteatinghabits
 
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -53,6 +54,7 @@ class MainFragment1 : Fragment() {
         var view =  inflater.inflate(R.layout.fragment_main1, container, false)
 
         var viewPager11 = view.findViewById<ViewPager>(R.id.viewpager11)
+        var weight_history = view.findViewById<CardView>(R.id.weight_history)
 
         val adapter11 = FragmentAdapter()
         viewPager11.adapter = adapter11
@@ -73,6 +75,11 @@ class MainFragment1 : Fragment() {
                     })
             // 다이얼로그를 띄워주기
             builder.show()
+        }
+
+        weight_history.setOnClickListener {
+            var intent3 = Intent(requireActivity(), weight::class.java)
+            startActivity(intent3)
         }
 
 
