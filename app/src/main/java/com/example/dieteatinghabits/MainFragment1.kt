@@ -67,7 +67,7 @@ class MainFragment1 : Fragment() {
         habit.setOnClickListener {
             val builder = AlertDialog.Builder(requireActivity())
             builder.setTitle(" 다이어트를 위한 좋은 습관! ")
-                .setMessage("술안마시기." + "\n")
+                .setMessage("술안마시기!!" + "\n")
                 .setMessage("차차 준비중.")
 
                 .setPositiveButton("확인",
