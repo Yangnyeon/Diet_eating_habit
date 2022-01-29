@@ -39,9 +39,7 @@ class weight : AppCompatActivity() {
             val builder = AlertDialog.Builder(this)
 
             var View = layoutInflater.inflate(R.layout.dialog, null)
-            var txt1 = View.findViewById<TextView>(R.id.txt1)
             var edt1 = View.findViewById<EditText>(R.id.edt1)
-            var txt2 = View.findViewById<TextView>(R.id.txt2)
 
             builder.setView(View)
                 .setPositiveButton("확인",

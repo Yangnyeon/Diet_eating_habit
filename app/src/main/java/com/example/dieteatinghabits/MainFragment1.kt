@@ -5,15 +5,21 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.inflate
 import android.view.ViewGroup
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.Button
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.widget.AlertDialogLayout
 import androidx.cardview.widget.CardView
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.viewpager.widget.ViewPager
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.diettip.*
+import kotlinx.android.synthetic.main.diettip.view.*
 import kotlinx.android.synthetic.main.fragment_main1.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -30,8 +36,9 @@ class MainFragment1 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
     var currentPosition = 0
+
+
 
     val handler = Handler(Looper.getMainLooper()) {
         setPage()
@@ -43,6 +50,7 @@ class MainFragment1 : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+
         }
     }
 
@@ -52,6 +60,9 @@ class MainFragment1 : Fragment() {
     ): View? {
 
         var view =  inflater.inflate(R.layout.fragment_main1, container, false)
+        var view2 = inflater.inflate(R.layout.diettip, container, false)
+
+
 
         var viewPager11 = view.findViewById<ViewPager>(R.id.viewpager11)
         var weight_history = view.findViewById<CardView>(R.id.weight_history)
@@ -62,20 +73,21 @@ class MainFragment1 : Fragment() {
         val thread = Thread(PagerRunnable())
         thread.start()
 
+
         var habit = view.findViewById<CardView>(R.id.habit)
 
-        habit.setOnClickListener {
-            val builder = AlertDialog.Builder(requireActivity())
-            builder.setTitle(" 다이어트를 위한 좋은 습관! ")
-                .setMessage("술안마시기!!" + "\n")
-                .setMessage("차차 준비중.")
 
+        habit.setOnClickListener {
+
+            var dialogView:View = layoutInflater.inflate(R.layout.diettip, null)
+            var builder = AlertDialog.Builder(view2.context)
+            builder.setView(dialogView)
                 .setPositiveButton("확인",
                     DialogInterface.OnClickListener { dialog, id ->
                     })
-            // 다이얼로그를 띄워주기
             builder.show()
         }
+
 
         weight_history.setOnClickListener {
             var intent3 = Intent(requireActivity(), weight::class.java)
@@ -87,6 +99,7 @@ class MainFragment1 : Fragment() {
 
         return view
     }
+
 
     private fun setPage() {
         if(currentPosition == 3 ) {
