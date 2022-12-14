@@ -63,6 +63,7 @@ class MainFragment1 : Fragment() {
         var view2 = inflater.inflate(R.layout.diettip, container, false)
 
 
+        //
 
         var viewPager11 = view.findViewById<ViewPager>(R.id.viewpager11)
         var weight_history = view.findViewById<CardView>(R.id.weight_history)
@@ -73,6 +74,7 @@ class MainFragment1 : Fragment() {
         val thread = Thread(PagerRunnable())
         thread.start()
 
+        //
 
         var habit = view.findViewById<CardView>(R.id.habit)
 
@@ -100,6 +102,7 @@ class MainFragment1 : Fragment() {
         return view
     }
 
+    //
 
     private fun setPage() {
         if(currentPosition == 3 ) {
@@ -120,6 +123,8 @@ class MainFragment1 : Fragment() {
             }
         }
     }
+
+    //
 
     companion object {
         /**

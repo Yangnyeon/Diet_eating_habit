@@ -23,4 +23,5 @@
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
         ></com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </LinearLayout>

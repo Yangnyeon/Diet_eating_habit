@@ -20,7 +20,8 @@
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewpager11"
                 android:layout_width="match_parent"
-                android:layout_height="400sp"></androidx.viewpager.widget.ViewPager>
+                android:layout_height="400sp">
+            </androidx.viewpager.widget.ViewPager>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="380sp"

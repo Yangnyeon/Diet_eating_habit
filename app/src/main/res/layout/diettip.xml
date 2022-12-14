@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="1.식사 전에 물마시기\n\n2.정해진 그릇 담아놓고 먹기\n\n3.과일과 채소의 양 늘리기\n\n4.설탕 줄이기\n\n5.매일 섭취하는 칼로리 확인하기"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/text1"
+        android:padding="20sp"
+        ></TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
